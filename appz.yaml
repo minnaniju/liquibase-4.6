@@ -1,0 +1,24 @@
+app:
+  name: liquibase
+  code: LIQUIBASE
+  notify: mniju@ecloudcontrol.com
+
+build:
+  version: 4.6
+  env: DEV
+  build_file: none
+  output_files: output/*.zip
+  image_template: liquibase-4.6
+
+deploy:
+  context: minnaniju/DEV
+  replicas: 1
+   
+  
+properties:
+  SQL_SERVER: 
+  DB_NAME: CLOUDCONTROL
+  DB_USERNAME: appzuser
+  DB_PASSWORD:
+     vault: DB_PASSWORD
+  revision : 12
