@@ -1,6 +1,6 @@
 app:
-  name: liquibase
-  code: LIQUIBASE
+  name: liquibase 4.6
+  code: LIQUIBASE 4.6
   notify: mniju@ecloudcontrol.com
 
 build:
