@@ -1,6 +1,6 @@
 app:
   name: liquibase 4.6
-  code: LIQUIBASE 4.6
+  code: LIQUIBASE 
   notify: mniju@ecloudcontrol.com
 
 build:
@@ -24,4 +24,4 @@ properties:
   APPZ_DEPLOY_ID: ""
   ROLLBACK_TO_STATE_TAG: ""
   
-  revision : 5
+  revision : 6
