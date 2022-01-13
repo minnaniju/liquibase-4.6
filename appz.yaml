@@ -16,9 +16,10 @@ deploy:
    
   
 properties:
-  SQL_SERVER: 
-  DB_NAME: CLOUDCONTROL
-  DB_USERNAME: appzuser
-  DB_PASSWORD:
-     vault: DB_PASSWORD
+  DB_USER: postgres
+  DB_URL: jdbc:postgresql://postgres13-master-13-x/postgres
+  ACTION: status
+  APPZ_DEPLOY_ID: ""
+  ROLLBACK_TO_STATE_TAG: ""
+  
   revision : 12
