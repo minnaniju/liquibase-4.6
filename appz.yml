@@ -1,5 +1,5 @@
 app:
-  name: liquibase 4.6
+  name: liquibase 
   code: LIQUIBASE 
   notify: mniju@ecloudcontrol.com
 
@@ -16,12 +16,13 @@ deploy:
    
   
 properties:
-  DB_USER: postgres
+  DB_NAME: liquibase
+  DB_USER: liquibase
   DB_URL: jdbc:postgresql://postgres13-master-13-x/postgres
   DB_PASSWORD:  
-      vault: POSTGRESQL_PASSWORD
+      vault: POSTGRESQL_LIQUIBASE_PASSWORD
   ACTION: status
   APPZ_DEPLOY_ID: ""
   ROLLBACK_TO_STATE_TAG: ""
   
-  revision : 10
+  revision : 11
