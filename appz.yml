@@ -24,4 +24,4 @@ properties:
   APPZ_DEPLOY_ID: ""
   ROLLBACK_TO_STATE_TAG: ""
   
-  revision : 9
+  revision : 10
