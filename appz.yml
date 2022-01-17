@@ -18,7 +18,7 @@ deploy:
 properties:
   DB_NAME: liquibase
   DB_USER: liquibase
-  DB_URL: jdbc:postgresql://postgres13-master-13-x/postgres
+  DB_URL: jdbc:postgresql://postgres13-master-13-x/liquibase
   DB_PASSWORD: FpQ5BYPLv3ZWiVOKLfKi
   ACTION: status
   APPZ_DEPLOY_ID: ""
