@@ -24,6 +24,6 @@ properties:
   ACTION: status
   APPZ_DEPLOY_ID: ""
   ROLLBACK_TO_STATE_TAG: ""
-  revision : 26
+  revision : 27
   
  
