@@ -20,7 +20,7 @@ properties:
   DB_USER: liquibase
   DB_URL: jdbc:postgresql://postgres13-master-13-x/liquibase
   DB_PASSWORD:  
-      vault: POSTGRESQL_LIQUIBASE_PASSWORD
+      vault: POSTGRESQL_PASSWORD
   ACTION: status
   APPZ_DEPLOY_ID: ""
   ROLLBACK_TO_STATE_TAG: ""
