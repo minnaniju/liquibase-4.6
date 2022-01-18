@@ -13,7 +13,8 @@ build:
 deploy:
   context: minnaniju/DEV
   replicas: 1
-   
+  port:
+   - 9090
   
 properties:
   DB_NAME: liquibase
