@@ -23,6 +23,6 @@ properties:
   ACTION: update
   APPZ_DEPLOY_ID: ""
   ROLLBACK_TO_STATE_TAG: ""
-  revision : 29
+  revision : 30
   
  
