@@ -21,7 +21,6 @@ properties:
   DB_PASSWORD:  
       vault: POSTGRESQL_LIQUIBASE_PASSWORD
   ACTION: status
-  APPZ_DEPLOY_ID: ""
   ROLLBACK_TO_STATE_TAG: ""
   revision : 30
   
