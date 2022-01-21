@@ -21,7 +21,7 @@ properties:
   DB_PASSWORD:  
       vault: POSTGRESQL_LIQUIBASE_PASSWORD
   ACTION: rollback
-  ROLLBACK_TO_STATE_TAG: ""
+  ROLLBACK_TO_STATE_TAG: "ROLLBACK_TO_STATE_TAG"
   revision : 33
   
  
