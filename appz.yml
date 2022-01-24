@@ -20,8 +20,8 @@ properties:
   DB_URL: jdbc:postgresql://postgres13-master-13-x/liquibase
   DB_PASSWORD:  
       vault: POSTGRESQL_LIQUIBASE_PASSWORD
-  ACTION: status
-  ROLLBACK_TO_STATE_TAG: ""
+  ACTION: rollback
+  ROLLBACK_TO_STATE_TAG: "1478714f-db04-4529-b527-781aa9454895"
   revision : 38
   
  
