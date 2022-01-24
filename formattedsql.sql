@@ -5,8 +5,3 @@ CREATE TABLE test_table
          enddate DATE,
          class CHAR(20))
 ;
-CREATE TABLE test_table2
-        (startdate DATE,
-         enddate DATE,
-         class CHAR(20))
-;
