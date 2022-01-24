@@ -20,8 +20,8 @@ properties:
   DB_URL: jdbc:postgresql://postgres13-master-13-x/liquibase
   DB_PASSWORD:  
       vault: POSTGRESQL_LIQUIBASE_PASSWORD
-  ACTION: rollback
-  ROLLBACK_TO_STATE_TAG: ""
+  ACTION: action
+  ROLLBACK_TO_STATE_TAG: "APPZ_DEPLOY_ID"
   revision : 34
   
  
