@@ -6,16 +6,17 @@
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 	 <include file="formattedsql.sql" relativeToChangelogFile="true"/>
    <changeSet  author="heavy-gopher"  id="2">
-    <createTable schemaName="public" tableName="person2">
-        <column  name="address"  type="varchar(255)"/>
+    <createTable schemaName="public" tableName="person">
+        <column  name="id"  type="int"/>
+	<column  name="name"  type="varchar(10)"/>
     </createTable>
     </changeSet>
-    <changeSet  author="heavy-gopher"  id="2" runAlways=”true”>  
+    <changeSet  author="heavy-gopher"  id="3" runAlways=”true”>  
     	<delete  catalogName="cat"  
            schemaName="public"  
             tableName="person"/>  
     </changeSet>
-    <changeSet author="heavy-gopher" id="3" runAlways=”true”>
+    <changeSet author="heavy-gopher" id="4" runAlways=”true”>
     	<loadData catalogName="cat" 
             commentLineStartsWith="//"
             encoding="UTF-8"  
