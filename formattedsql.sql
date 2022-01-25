@@ -1,6 +1,6 @@
 --liquibase formatted sql
 --changeset sql-user:3
-CREATE TABLE test
+CREATE TABLE new_test
         (id INT,
          name VARCHAR(10))
 ;
