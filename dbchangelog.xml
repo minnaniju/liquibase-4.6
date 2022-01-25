@@ -6,11 +6,9 @@
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 	 <include file="formattedsql.sql" relativeToChangelogFile="true"/>
    <changeSet id="2" author="sqluser">
-     <createTable catalogName="liquibase" tableName="orange">
-           <column name="id" type="int">
-           <constraints primaryKey="true"/>
-           </column>
-           <column name="name" type="varchar(10)"/>
-     </createTable>
+     <loadData 
+            file="users.csv"
+            tableName="new_table"
+	    separator=";"/>
    </changeSet>
 </databaseChangeLog>
