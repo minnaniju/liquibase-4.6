@@ -8,7 +8,7 @@
    <changeSet id="3" author="sqluser">
      <loadData 
             file="users.csv"
-            tableName="new_table"
+            tableName="orange"
 	    separator=";"/>
    </changeSet>
 </databaseChangeLog>
