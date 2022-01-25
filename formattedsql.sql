@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset heavy-gopher:2
+--changeset sql-user:2
 CREATE TABLE test
         (id INT,
          name VARCHAR(10))
