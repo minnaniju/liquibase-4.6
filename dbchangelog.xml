@@ -11,10 +11,4 @@
 	<column  name="name"  type="varchar(10)"/>
     </createTable>
     </changeSet>
-    <changeSet author="heavy-gopher" id="3">
-    	<loadData 
-            file="users.csv"
-            tableName="new_table"
-	    separator=";"/>
-    </changeSet>
 </databaseChangeLog>
