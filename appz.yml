@@ -22,6 +22,6 @@ properties:
       vault: POSTGRESQL_LIQUIBASE_PASSWORD
   ACTION: update
   ROLLBACK_TO_STATE_TAG: ""
-  revision : 59
+  revision : 60
   
  
