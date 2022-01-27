@@ -7,7 +7,7 @@
    <changeSet id="1" author="sqluser">
      <loadData 
             file="users.csv"
-            tableName="new_table"
+            tableName="new_test"
 	    separator=";"/>
    </changeSet>
     <changeSet id="2" author="sqluser">
