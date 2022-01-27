@@ -4,7 +4,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
-   <changeSet  author="temp">
+   <changeSet author="temp" id="7">
     <createTable schemaName="public" tableName="vehicle">
         <column  name="brand"  type="varchar(12)"/>
 	<column  name="car"  type="varchar(10)"/>
@@ -16,7 +16,7 @@
             tableName="vehicle"
 	    separator=";"/>
    </changeSet>
-   <changeSet  author="temp">
+   <changeSet  author="temp" id="8">
     <createTable schemaName="public" tableName="motor">
         <column  name="brand"  type="varchar(12)"/>
 	<column  name="car"  type="varchar(10)"/>
@@ -28,7 +28,7 @@
             tableName="motor"
 	    separator=";"/>
     </changeSet>
-   <changeSet  author="temp">
+   <changeSet  author="temp" id="9">
     <createTable schemaName="public" tableName="machine">
         <column  name="brand"  type="varchar(12)"/>
 	<column  name="car"  type="varchar(10)"/>
