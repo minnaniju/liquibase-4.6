@@ -16,25 +16,25 @@
             tableName="Apple"
 	    separator=";"/>
    </changeSet>
-   <changeSet  author="temp1"  id="2">
+   <changeSet  author="temp"  id="2">
     <createTable schemaName="public" tableName="Mango">
         <column  name="id"  type="int"/>
 	<column  name="name"  type="varchar(10)"/>
     </createTable>
    </changeSet>
-    <changeSet id="2" author="temp1">
+    <changeSet id="2" author="temp">
      <loadData 
             file="users.csv"
             tableName="Mango"
 	    separator=";"/>
     </changeSet>
-   <changeSet  author="temp2"  id="3">
+   <changeSet  author="temp"  id="3">
     <createTable schemaName="public" tableName="Kiwi">
         <column  name="id"  type="int"/>
 	<column  name="name"  type="varchar(10)"/>
     </createTable>
     </changeSet>
-   <changeSet id="3" author="temp2">
+   <changeSet id="3" author="temp">
      <loadData 
             file="users.csv"
             tableName="Kiwi"
