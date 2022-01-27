@@ -4,37 +4,37 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
-   <changeSet  author="temp"  id="1">
+   <changeSet  author="temp"  id="4">
     <createTable schemaName="public" tableName="Apple">
         <column  name="id"  type="int"/>
 	<column  name="name"  type="varchar(10)"/>
     </createTable>
     </changeSet>	
-   <changeSet id="1" author="temp">
+   <changeSet id="4" author="temp">
      <loadData 
             file="users.csv"
             tableName="Apple"
 	    separator=";"/>
    </changeSet>
-   <changeSet  author="temp"  id="2">
+   <changeSet  author="temp"  id="5">
     <createTable schemaName="public" tableName="Mango">
         <column  name="id"  type="int"/>
 	<column  name="name"  type="varchar(10)"/>
     </createTable>
    </changeSet>
-    <changeSet id="2" author="temp">
+    <changeSet id="5" author="temp">
      <loadData 
             file="users.csv"
             tableName="Mango"
 	    separator=";"/>
     </changeSet>
-   <changeSet  author="temp"  id="3">
+   <changeSet  author="temp"  id="6">
     <createTable schemaName="public" tableName="Kiwi">
         <column  name="id"  type="int"/>
 	<column  name="name"  type="varchar(10)"/>
     </createTable>
     </changeSet>
-   <changeSet id="3" author="temp">
+   <changeSet id="6" author="temp">
      <loadData 
             file="users.csv"
             tableName="Kiwi"
