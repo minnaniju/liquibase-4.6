@@ -4,22 +4,40 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+   <changeSet  author="sqluser"  id="1">
+    <createTable schemaName="public" tableName="Apple">
+        <column  name="id"  type="int"/>
+	<column  name="name"  type="varchar(10)"/>
+    </createTable>
+    </changeSet>	
    <changeSet id="1" author="sqluser">
      <loadData 
             file="users.csv"
-            tableName="new_test"
+            tableName="Apple"
 	    separator=";"/>
+   </changeSet>
+   <changeSet  author="sqluser"  id="2">
+    <createTable schemaName="public" tableName="Mango">
+        <column  name="id"  type="int"/>
+	<column  name="name"  type="varchar(10)"/>
+    </createTable>
    </changeSet>
     <changeSet id="2" author="sqluser">
      <loadData 
             file="users.csv"
-            tableName="new_table"
+            tableName="Mango"
 	    separator=";"/>
-   </changeSet>
+    </changeSet>
+   <changeSet  author="sqluser"  id="3">
+    <createTable schemaName="public" tableName="Kiwi">
+        <column  name="id"  type="int"/>
+	<column  name="name"  type="varchar(10)"/>
+    </createTable>
+    </changeSet>
    <changeSet id="3" author="sqluser">
      <loadData 
             file="users.csv"
-            tableName="orange"
+            tableName="Kiwi"
 	    separator=";"/>
    </changeSet>
 </databaseChangeLog>
