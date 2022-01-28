@@ -16,18 +16,25 @@
             tableName="vehicle"
 	    separator=";"/>
    </changeSet>
-   <changeSet  author="temp" id="9">
-    <createTable schemaName="schema1" tableName="motor">
-        <column  name="brand"  type="varchar(12)"/>
-	<column  name="car"  type="varchar(10)"/>
-    </createTable>
-   </changeSet>
-    <changeSet id="10" author="temp">
+   < changeSet id="9" author="temp">
+
+		< comment> create table to store employee information < /comment>
+
+		< createTable tableName="motor" schemaName="schema1">
+			< column name="brand" type="varchar(12)">
+			< constraints primaryKey="true"/>
+			< /column>
+			< column name="car" type="varchar(10)">
+			< /column>
+		< /createTable>
+
+	< /changeSet>
+	  <changeSet id="10" author="temp">
      <loadData 
             file="users.csv"
             tableName="motor"
 	    separator=";"/>
-    </changeSet>
+   </changeSet>	
    <changeSet  author="temp" id="11">
     <createTable schemaName="schema1" tableName="machine">
         <column  name="brand"  type="varchar(12)"/>
