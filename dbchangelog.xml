@@ -47,6 +47,25 @@
             tableName="machine"
 	    separator=";"/>
    </changeSet>
+	 < changeSet id="13" author="temp">
+
+		< comment> create table to store employee information < /comment>
+
+		< createTable tableName="mechanic" schemaName="schema1">
+			< column name="brand" type="varchar(12)">
+			< constraints primaryKey="true"/>
+			< /column>
+			< column name="car" type="varchar(10)">
+			< /column>
+		< /createTable>
+
+	< /changeSet>
+	  <changeSet id="14" author="temp">
+           <loadData 
+            file="users.csv"
+            tableName="mechanic"
+	    separator=";"/>
+   </changeSet>		
 </databaseChangeLog>
 
 
